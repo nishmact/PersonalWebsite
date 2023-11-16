@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <p class="name">Nishma</p>
+               <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <p class="humberger"><i class="bi bi-plus" onclick="closemenu()"></i></p>
+               </ul>
+               <p class="humberger"><i class="bi bi-list" onclick="openmenu()"></i></p>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Nishma</span><br>from Kerala</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img  src="images/img2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello World! I'm Nishma from Kerala. I am a graduated student at the Calicut University. After graduation my goal is to find a passion in the full stack development where I can continue to learn and develop new skills.  </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Languages and Frameworks</span><br>HTML, CSS, JavaScript </li>
+                            <li><span>Backend Technologies and Frameworks</span><br>NodeJS, ExpressJS, Django, Flask, C++ </li>
+                            <li><span>Database Management Systems</span><br>MySQL, SQL SERVER and PostgreSQL, MongoDB, and Oracle Database </li>
+                        </ul>
+                    </div>
+                   
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Ed (Bachelor Of Education) | English</span><br>Jamia Nadwiyya Training College Edavanna | Kerala, India </li>
+                            <li><span>Graduation | BA English</span><br>Najath College Karuvarakundu | Kerala, India </li>
+                            <li><span>Higher Secondary Education</span><br>G.H.S.S Vaniyamblam | Kerala, India </li>
+                            <li><span>Highschool  Education</span><br>G.H.S Anchachavidi | Kerala, India </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- --------------services------- -->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                
+                <h2>Front-end development</h2>
+                <p>
+                    Experienced front-end developer with a passion for creating visually stunning and user-friendly websites and web applications. Proficient in translating design concepts into responsive and interactive web experiences. Adept at working collaboratively with cross-functional teams to deliver high-quality projects within deadlines. Demonstrated expertise in modern web technologies, frameworks, and best practices.
+                </p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                
+                <h2>Back-end development</h2>
+                <p>
+                    Experienced back-end developer with a strong foundation in designing and implementing server-side solutions that power dynamic and data-driven web applications. Proficient in a wide range of programming languages, databases, and frameworks. Skilled in optimizing application performance, ensuring data security, and collaborating with cross-functional teams to deliver scalable and robust solutions.
+                </p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX design</h2>
+                <p>
+                    Experienced UI/UX designer with a strong passion for crafting intuitive and visually compelling digital experiences. Proficient in user research, user interface (UI) design, interaction design, and usability testing. Adept at translating user needs and business goals into user-friendly and aesthetically pleasing designs.
+                </p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- -----------portfolio----------- -->
+   <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            
+                <div class="work">
+                    <img  src="images/youtubescreenshort.png">
+                    <div class="layer">
+                        <h3>YouTube clone using HTML and CSS</h3><br>
+                        <p>Developed a YouTube clone using HTML and CSS, replicating the core features and interface of the popular video-sharing platform. This project showcases proficiency in front-end web development, and user interface styling</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img  src="images/healthlinepic.png">
+                    <div class="layer">
+                        <h3>Healthline clone using HTML and CSS</h3><br>
+                        <p>Designed a healthline clone with HTML and CSS. Its health related website. This project demonstrates expertise in front-end web development, emphasizing user interface design and responsive layouts.</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/starbuckspic.png">
+                    <div class="layer">
+                        <h3>Starbucks clone using Bootsrap and JavaScript</h3><br>
+                        <p>Designed a Starbucks clone using HTML and CSS, faithfully recreating the brand's visual elements and layout. This project showcases expertise in front-end web development, including precision in replicating the aesthetics of a well-known brand.</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+           </div>
+           
+      </div>
+   </div>
+
+   <!-- ------------contact---------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="bi bi-send"></i>nishmact3@gmail.com</p>
+                <p> <i class="bi bi-telephone-fill"></i>7902678244</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/nishmact/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/nishma_jaleel/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    
+                    
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet" id="signup-form">
+                <input type="text" name="Name"  placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6"  placeholder="Your message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+  </div>
+</div>
+   
+
+    <script>
+
+       var tablinks = document.getElementsByClassName("tab-links")
+       var tabcontents = document.getElementsByClassName("tab-contents")
+
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+        
+       }
+
+    </script>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxkniM4yQeYoG6NHb3c4IFtT3un8zeCYqIPnNQGkLsN9ok45044Mi0myvFntvHInYzqiw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+               setTimeout(function(){
+                msg.innerHTML = ""
+               },5000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+       <script src="script.js">
+        
+       </script>
+
+       
+    
+</body>
+</html>
